@@ -1,0 +1,19 @@
+.Button {
+    background-color: #ddd;
+    color: #333;
+    border: none;
+    font-size: .9rem;
+    border-radius: .5em;
+    padding: .3em 1em;
+    cursor: pointer;
+
+    &.primary {
+        background-color: #5936c1;
+        color: #fff;
+    }
+    
+    &.secondary {
+        background-color: #593690;
+        color: #fff;
+    }
+}

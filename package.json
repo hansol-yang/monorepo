@@ -1,0 +1,21 @@
+{
+    "private": true,
+    "name": "root",
+    "workspaces": {
+        "packages": [
+            "packages/*"
+        ],
+        "nohoist": [
+            "**/@storybook/**",
+            "**/@rollup/**",
+            "rollup-plugin-terser",
+            "rollup-plugin-postcss"
+        ]
+    },
+    "scripts": {
+        "rebuild": "sh ./cleanup.sh && yarn",
+        "dev:uikit": "yarn workspace @/uikit dev",
+        "dev:admin": "yarn workspace @/admin dev",
+        "build:uikit": "yarn workspace @/uikit build"
+    }
+}
